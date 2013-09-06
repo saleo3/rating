@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>css and js rating</title>
+	<link rel="stylesheet" type="text/css" href="rating.css">
+	<style type="text/css">
+		body {
+			text-align: center;
+		}
+
+		label {
+			display: block;
+			margin: 20px 0;
+		}
+
+	</style>
+</head>
+<body>
+
+	<label>A simple rating system</label>
+
+	<div id="rating" name="rating-container">
+		<span class="rating-star" data-value="5"></span>
+		<span class="rating-star" data-value="4"></span>
+		<span class="rating-star" data-value="3"></span>
+		<span class="rating-star" data-value="2"></span>
+		<span class="rating-star" data-value="1"></span>	
+	</div>
+
+	<label id="demo-res"></label>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="rating.js"></script>
+<script>
+	$('#rating').eRating();
+</script>
+</body>
+</html>
